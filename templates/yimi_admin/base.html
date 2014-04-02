@@ -82,7 +82,6 @@
                                 <li><a href="{% url 'yimi_admin:menu_add' %}">增加一级菜单</a></li>
                             </ul>
                         </li>                                                                       
-                        {% if request.user.username != 'zn234567@126.com' %}
                         <li><a href="#" title="" class="expand"><i class="icon-reorder"></i>用户提交信息管理<strong>3</strong></a>
                             <ul>
                                 <li><a href="{% url 'yimi_admin:activity_list' %}">活动管理</a></li>
@@ -91,7 +90,6 @@
                                 <li><a href="{% url 'yimi_admin:questions_list' %}">在线咨询</a></li>
                             </ul>
                         </li>                          
-                        {% endif %}                                             
                     </ul>
                     <!-- /main navigation -->
                 </div>
