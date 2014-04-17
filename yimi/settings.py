@@ -65,8 +65,8 @@ WSGI_APPLICATION = 'yimi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nanjing',
+        'ENGINE': 'django.db.backends.*',
+        'NAME': '*',
         'USER': '*',
         'PASSWORD': '*',
     }
@@ -106,7 +106,7 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
 
-MEDIA_ROOT = '/var/data/yimi-img/upload'
+MEDIA_ROOT = '*'
 MEDIA_URL = '/media/'
 
 TOKEN_CACHE_PRE = 'yimi_access_token'
